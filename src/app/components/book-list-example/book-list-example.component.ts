@@ -11,11 +11,17 @@ export class BookListExampleComponent implements OnInit {
 
   books: IBook[];
   selectedBooks: IBook[];
+  selectedBooksA: IBook[];
+  selectedBooksB: IBook[];
+  selectedBooksC: IBook[];
   constructor() { }
 
   ngOnInit(): void {
     this.books = this.fetchBook();
     this.selectedBooks = [];
+    this.selectedBooksA = [];
+    this.selectedBooksB = [];
+    this.selectedBooksC = [];
   }
 
   fetchBook(): IBook[] {
@@ -24,6 +30,15 @@ export class BookListExampleComponent implements OnInit {
 
   selectBook(book: IBook): void {
     this.selectedBooks.push(book);
+    if(book.name == "Continuous Delivery"){
+      this.selectedBooksA.push(book);
+    }
+    if(book.name == "Algorithms"){
+      this.selectedBooksB.push(book);
+    }
+    if(book.name == "The Self-Taught Programmer"){
+      this.selectedBooksC.push(book);
+    }
   }
 
 }

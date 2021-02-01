@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BookSelectCountComponent implements OnInit {
 
   @Input() totalBooks: number;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -18,7 +18,7 @@ import { SuscriptionFormComponent } from './components/suscription-form/suscript
 import { TemplateFormPageComponent } from './pages/template-form-page/template-form-page.component';
 import { SuscriptionInlineFormComponent } from './components/suscription-inline-form/suscription-inline-form.component';
 import { ReserveBookFormComponent } from './components/reserve-book-form/reserve-book-form.component';
-
+import { BookListSimpleExampleComponent } from './components/book-list-simple-example/book-list-simple-example.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +36,7 @@ import { ReserveBookFormComponent } from './components/reserve-book-form/reserve
     TemplateFormPageComponent,
     SuscriptionInlineFormComponent,
     ReserveBookFormComponent,
+    BookListSimpleExampleComponent,
   ],
   imports: [
     BrowserModule,
