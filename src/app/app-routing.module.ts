@@ -5,15 +5,7 @@ import { NotFoundPageComponent } from './core/pages/not-found-page/not-found-pag
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
-  },
-  {
-    path: 'books',
-    loadChildren: () => import('./modules/books/books.module').then(m => m.BooksModule)
-  },
-  {
-    path: 'admin',
-    loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule)
+    loadChildren: () => import('./modules/layout/layout.module').then(m => m.LayoutModule)
   },
   {
     path: 'example',
